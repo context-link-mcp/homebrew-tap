@@ -5,21 +5,21 @@
 class ContextLink < Formula
   desc "Local MCP Context Gateway for AI Coding Agents"
   homepage "https://github.com/context-link-mcp/context-link"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/context-link-mcp/context-link/releases/download/v0.2.0/context-link_0.2.0_darwin_amd64.tar.gz"
-      sha256 "3ab32ec46ffdfb8bb57af0f2e0083e8825584bb1041835b7c9eeaa20e455a61a"
+      url "https://github.com/context-link-mcp/context-link/releases/download/v0.3.0/context-link_0.3.0_darwin_amd64.tar.gz"
+      sha256 "48456bfc3ce09545fe244245f4ed46bc580aa4c6043759b60908f185f1204e20"
 
       define_method(:install) do
         bin.install "context-link"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/context-link-mcp/context-link/releases/download/v0.2.0/context-link_0.2.0_darwin_arm64.tar.gz"
-      sha256 "229ba333687b9f64df6aaa06cc8d030d7667c203d7f7e3f05dd4bf76a0208db2"
+      url "https://github.com/context-link-mcp/context-link/releases/download/v0.3.0/context-link_0.3.0_darwin_arm64.tar.gz"
+      sha256 "706a23ea5b39cba0dfc1ee11a017e2645a424fa0a6442fbf973a0a2c33aa87ab"
 
       define_method(:install) do
         bin.install "context-link"
@@ -29,15 +29,15 @@ class ContextLink < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/context-link-mcp/context-link/releases/download/v0.2.0/context-link_0.2.0_linux_amd64.tar.gz"
-      sha256 "488e1a13d3b894eddeae8519a15855464a67bdbe89180c9b0d7447d8d13f8976"
+      url "https://github.com/context-link-mcp/context-link/releases/download/v0.3.0/context-link_0.3.0_linux_amd64.tar.gz"
+      sha256 "b34bec1323503cfde02774aaae960f20e5a0c994941f8a15a53c9ed385c1958d"
       define_method(:install) do
         bin.install "context-link"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/context-link-mcp/context-link/releases/download/v0.2.0/context-link_0.2.0_linux_arm64.tar.gz"
-      sha256 "75cca556118a09e146ce709ce3b84369c3f7b4140dd05943eff01d9fd47825fc"
+      url "https://github.com/context-link-mcp/context-link/releases/download/v0.3.0/context-link_0.3.0_linux_arm64.tar.gz"
+      sha256 "52a1b3bcefdd8f35a66cb6448afa42af680aec710df58225b1fff675cdea6819"
       define_method(:install) do
         bin.install "context-link"
       end
